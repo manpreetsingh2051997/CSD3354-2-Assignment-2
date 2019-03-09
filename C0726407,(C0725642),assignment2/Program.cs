@@ -35,7 +35,7 @@ namespace C0726407__C0725642__assignment2
 
         {
 
-            return intMethod1 * 2;
+            return intMethod1 * 4;
 
         }
 
@@ -45,13 +45,13 @@ namespace C0726407__C0725642__assignment2
 
         {
 
-            return intMethod2 * 10;
+            return intMethod2 * 20;
 
         }
         public void Method4(MyDelegate myDelegate)
         {
-            int result = myDelegate(10);
-            Console.WriteLine(result);
+            for (int i = 1; i <= 5; i++)
+                System.Console.WriteLine(myDelegate(i) + " ");
         }
 
 
