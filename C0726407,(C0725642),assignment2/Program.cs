@@ -22,37 +22,27 @@ namespace C0726407__C0725642__assignment2
 
 
         }
+        public delegate void MyDelegate();
 
-
-    }
-    public delegate void MyDelegate();
-    public class DelegateExercises
-
-    {
-
-        void Method1()
-
+        public class DelegateExercises
         {
 
-            System.Console.WriteLine("Method1");
-
-        }
 
 
 
-        public void Method3()
+            void Method3()
 
-        {
+            {
 
-            MyDelegate myDelegate = new MyDelegate(Method1);
-            myDelegate();
-            System.Console.WriteLine(myDelegate.ToString());
+
+                System.Console.WriteLine(MyDelegate.ToString());
+
+
+            }
+
+
 
 
         }
-
-
-
-
     }
 }
